@@ -1,0 +1,5 @@
+org/main/Main.class
+org/utils/LegalesUtils.class
+org/daos/impl/JSONRetrieverDaoImpl.class
+org/daos/JSONRetrieverDao.class
+org/models/LegalJsonDto.class
