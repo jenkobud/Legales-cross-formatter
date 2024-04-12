@@ -3,6 +3,12 @@ package org.models;
 import lombok.Getter;
 import lombok.Setter;
 
+/**
+ * LegalJsonDto
+ *  Other way to represent the JSON object, for the moment this impl will be Deprecated. JEB
+ */
+
+@Deprecated
 @Getter
 @Setter
 public class LegalJsonDto extends ObjectWDynamicFields {
