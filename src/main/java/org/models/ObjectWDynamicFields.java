@@ -4,6 +4,13 @@ import java.lang.reflect.Field;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * ObjectWDynamicFields
+ * abstract class with the capacity of obtaining inner params from it's name passed as String.
+ * Needs work... for the moment this impl will be Deprecated. JEB
+ */
+
+@Deprecated
 public abstract class ObjectWDynamicFields {
 
     public Object getAttributeValueByName(String attribute) throws NoSuchFieldException, IllegalAccessException {
@@ -12,7 +19,7 @@ public abstract class ObjectWDynamicFields {
 
     public Map<String, Object> getAtributesAsMap() {
         Map<String, Object> atributesMap = new HashMap<>();
-        for(Field field : this.getClass().getDeclaredFields()) {
+        for (Field field : this.getClass().getDeclaredFields()) {
             try {
                 atributesMap.put(field.getName(), this.getFieldValue(field));
             } catch (IllegalAccessException e) {
